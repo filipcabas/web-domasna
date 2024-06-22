@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo"><span>Fil</span>ip</a>
+    <nav class="nav">
+        <a href="index.html" class="active">Portfolio</a>
+        <a href="education.html" target="_blank">Education</a>
+    </nav>
+    <a href="#contact" class="contact">Contact Me</a>
+</header>
+
+<section class="home">
+    <div class="home-cont">
+        <h3>Hi</h3>
+        <h1>I'm <span>Filip<br></span>a Student</h1>
+        <p>
+            About Me<br/>
+            Hey there, I’m Filip! I'm all about mixing it up—whether I'm hitting the track for a run, shredding the slopes on my snowboard, or getting lost in epic gaming adventures. When I'm not buried in books, you might catch me under the hood, fine-tuning cars just for fun. Balancing all of this keeps me busy and always learning something new. <br/>Welcome to my page!
+        </p>
+        <div class="btn-box">
+            <button class="btn1">About Me</button>
+            <button class="btn2" onclick="scrollToContact()">Contact Me</button>
+        </div>
+    </div>
+    <div class="img-box">
+        <img src="ianmgemat1.jpg" alt=""/>
+    </div>
+</section>
+
+<section id="contact" class="contactform">
+    <h2 class="contactme">Contact<span>Me</span></h2>
+    <form action="#">
+        <div class="input">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="input">
+            <input type="number" placeholder="Number">
+            <input type="text" placeholder="Subject">
+        </div>
+        <textarea name="" id="" cols="35" rows="15" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn1">
+    </form>
+</section>
+
+<footer class="footer">
+    <div class="social">
+        <a href="#"><i class='bx bxl-facebook' ></i></a>
+        <a href="https://www.instagram.com/cabasfilip/"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/filipcabas"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-discord'></i></a>
+    </div>
+    <ul class="list">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact Me</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    <p class="copy">© 2024 Filip | All rights reserved </p>
+</footer>
+
+<script>
+    function scrollToContact() {
+        document.querySelector('#contact').scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>
